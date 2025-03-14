@@ -938,7 +938,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.1111
+  m_Intensity: 0.2222
   m_Range: 1.64
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -997,7 +997,7 @@ Transform:
   m_GameObject: {fileID: 281397481}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.4610448, y: 0.8016887, z: 7.7349205}
+  m_LocalPosition: {x: 2.1, y: 0.8016887, z: 7.7349205}
   m_LocalScale: {x: 1.6130853, y: 1.6130853, z: 1.6130853}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3311,8 +3311,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 5.6
-  m_Range: 10
+  m_Intensity: 8
+  m_Range: 1.5778028
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -3812,7 +3812,7 @@ PrefabInstance:
     - target: {fileID: 3522166117061465036, guid: 8237422c845310f4ba10a44f0f75fb1b, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 85d9f6f819b62794381b88d89b07df73, type: 2}
+      objectReference: {fileID: 2100000, guid: 08aad062707c7864b82171fa7f60a30f, type: 2}
     - target: {fileID: 5155330200160890403, guid: 8237422c845310f4ba10a44f0f75fb1b, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.1
@@ -4182,6 +4182,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1387226086}
     m_Modifications:
+    - target: {fileID: 745354868423634633, guid: edf33fe78a3b449418cb1946f8043378, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7118dc31293957843873b494ef08a091, type: 2}
+    - target: {fileID: 745354868423634633, guid: edf33fe78a3b449418cb1946f8043378, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4e9bad7dcca31b342affbad6abfc2b37, type: 2}
     - target: {fileID: 1250017443541159708, guid: edf33fe78a3b449418cb1946f8043378, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
@@ -4228,7 +4236,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8216752946686973046, guid: edf33fe78a3b449418cb1946f8043378, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.31772536
+      value: 0.46746933
       objectReference: {fileID: 0}
     - target: {fileID: 8216752946686973046, guid: edf33fe78a3b449418cb1946f8043378, type: 3}
       propertyPath: m_LocalScale.y
@@ -4240,7 +4248,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8216752946686973046, guid: edf33fe78a3b449418cb1946f8043378, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.8590546
+      value: -7.9214
       objectReference: {fileID: 0}
     - target: {fileID: 8216752946686973046, guid: edf33fe78a3b449418cb1946f8043378, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4280,7 +4288,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8216752946686973046, guid: edf33fe78a3b449418cb1946f8043378, type: 3}
       propertyPath: m_ConstrainProportionsScale
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6278,8 +6286,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
-  m_Range: 1.64
+  m_Intensity: 2
+  m_Range: 1.3817981
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -6337,7 +6345,7 @@ Transform:
   m_GameObject: {fileID: 1944135341}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.783321, y: 0.8016887, z: 7.176793}
+  m_LocalPosition: {x: -4.16, y: 0.8016887, z: 6.69}
   m_LocalScale: {x: 1.6130853, y: 1.6130853, z: 1.6130853}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6396,7 +6404,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.25
+  m_Intensity: 0.5
   m_Range: 1.64
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
