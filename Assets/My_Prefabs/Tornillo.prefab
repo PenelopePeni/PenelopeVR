@@ -82,7 +82,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7bf4f6fca103cbd45ab3be4b49074b40, type: 3}
       propertyPath: m_Name
-      value: tornilloHijo
+      value: tornillo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -320,7 +320,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4467effc11c7c448970bc73b091e04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screwAnimator: {fileID: 0}
+  screwAnimator: {fileID: 7164020819569156802}
   requiredObject: {fileID: 0}
   triggerInput:
     m_UseReference: 1
@@ -336,6 +336,7 @@ MonoBehaviour:
     m_Reference: {fileID: -2439264783773714294, guid: 0be0028c24f2a4c14a96b6aa39055933, type: 3}
   targetPositionObject: {fileID: 0}
   animationDuration: 1
+  objectToMove: {fileID: 5864647519892937649}
 --- !u!95 &7164020819569156802
 Animator:
   serializedVersion: 5
