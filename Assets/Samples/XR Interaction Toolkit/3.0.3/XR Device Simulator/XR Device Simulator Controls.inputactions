@@ -99,7 +99,7 @@
                     "name": "Cycle Devices",
                     "type": "Button",
                     "id": "d728c6fb-4deb-4268-9110-d64c7861cd17",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -586,6 +586,17 @@
                     "name": "",
                     "id": "10e34d1a-11b2-47b9-8297-87d762f38e67",
                     "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LMouse",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c58d5d25-7a22-4f71-8850-a89aa9fa96ed",
+                    "path": "<XRController>{RightHand}/{PrimaryTrigger}",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
