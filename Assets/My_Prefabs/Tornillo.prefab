@@ -336,7 +336,7 @@ MonoBehaviour:
     m_Reference: {fileID: -2439264783773714294, guid: 0be0028c24f2a4c14a96b6aa39055933, type: 3}
   targetPositionObject: {fileID: 0}
   animationDuration: 1
-  objectToMove: {fileID: 5864647519892937649}
+  physicsObject: {fileID: 5280151883838934508}
 --- !u!95 &7164020819569156802
 Animator:
   serializedVersion: 5

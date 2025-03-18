@@ -16,10 +16,10 @@ MonoBehaviour:
   - Default
   - Agarrar
   - Destornillador
-  - GuardarTornillos
+  - QuitarTornillo
   - Mesa
   - Martillo
-  - 
+  - PonerTornillo
   - 
   - 
   - 

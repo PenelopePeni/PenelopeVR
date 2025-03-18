@@ -8,8 +8,8 @@ public class ScrewTrigger : MonoBehaviour
     [SerializeField] private GameObject requiredObject; // Objeto que debe entrar en el trigger
     [SerializeField] private InputActionProperty triggerInput; // Acción del botón trigger
     [SerializeField] private GameObject targetPositionObject; // Posición final del tornillo
-    [SerializeField] private float animationDuration = 1f;
-    [SerializeField] private Transform objectToMove; // Referencia al objeto que debe moverse// Tiempo de espera serializado
+    [SerializeField] private float animationDuration = 1f; // Tiempo de espera serializado
+    [SerializeField] private GameObject physicsObject; // Objeto al que se le volverán a aplicar las físicas
     
     private Rigidbody screwRigidbody;
     private bool isObjectInside = false;
@@ -60,14 +60,18 @@ public class ScrewTrigger : MonoBehaviour
         isAnimating = false;
     }
 
-    public void OnAnimationEnd()
+    private void OnAnimationEnd()
     {
-        if (targetPositionObject != null && objectToMove != null)
+        if (targetPositionObject != null)
         {
-            objectToMove.position = targetPositionObject.transform.position;
-            if (screwRigidbody != null)
+            transform.position = targetPositionObject.transform.position; // Mueve el tornillo a la posición final
+            if (physicsObject != null)
             {
-                screwRigidbody.isKinematic = false;
+                Rigidbody objRigidbody = physicsObject.GetComponent<Rigidbody>();
+                if (objRigidbody != null)
+                {
+                    objRigidbody.isKinematic = false; // Reactiva las físicas en el objeto especificado
+                }
             }
         }
     }
