@@ -151,24 +151,36 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4150974750249458957, guid: ae21a780aba0b6d408e53f42ae143c12, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.8833611
+      objectReference: {fileID: 0}
+    - target: {fileID: -4150974750249458957, guid: ae21a780aba0b6d408e53f42ae143c12, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.0457913
+      objectReference: {fileID: 0}
+    - target: {fileID: -4150974750249458957, guid: ae21a780aba0b6d408e53f42ae143c12, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.2997947
+      objectReference: {fileID: 0}
+    - target: {fileID: -4150974750249458957, guid: ae21a780aba0b6d408e53f42ae143c12, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: -4150974750249458957, guid: ae21a780aba0b6d408e53f42ae143c12, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: -4150974750249458957, guid: ae21a780aba0b6d408e53f42ae143c12, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.7071068
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: -4150974750249458957, guid: ae21a780aba0b6d408e53f42ae143c12, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: -4150974750249458957, guid: ae21a780aba0b6d408e53f42ae143c12, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: -4150974750249458957, guid: ae21a780aba0b6d408e53f42ae143c12, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -213,7 +225,9 @@ PlayableDirector:
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
-  m_SceneBindings: []
+  m_SceneBindings:
+  - key: {fileID: 261176199969490283, guid: 7d12ec4a231e0cf4c926c8efcaff7fdb, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!95 &7265284706503420957
