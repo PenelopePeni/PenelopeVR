@@ -10,6 +10,8 @@ public class ScrewTrigger : MonoBehaviour
     [SerializeField] private GameObject targetPositionObject; // Posición final del tornillo
     [SerializeField] private float animationDuration = 1f; // Tiempo de espera serializado
     [SerializeField] private GameObject physicsObject; // Objeto al que se le volverán a aplicar las físicas
+    [SerializeField] private Rigidbody kinematicTarget; // Objeto cuyo isKinematic se modificará
+    [SerializeField] private GameObject objectToMove; // Objeto que cambiará de posición
     
     private Rigidbody screwRigidbody;
     private bool isObjectInside = false;
@@ -21,6 +23,11 @@ public class ScrewTrigger : MonoBehaviour
         if (screwRigidbody != null)
         {
             screwRigidbody.isKinematic = true; // Desactiva las físicas al inicio
+        }
+        
+        if (kinematicTarget != null)
+        {
+            kinematicTarget.isKinematic = true; // Se asegura de que el objeto designado sea kinematic al inicio
         }
     }
 
@@ -62,9 +69,9 @@ public class ScrewTrigger : MonoBehaviour
 
     private void OnAnimationEnd()
     {
-        if (targetPositionObject != null)
+        if (targetPositionObject != null && objectToMove != null)
         {
-            transform.position = targetPositionObject.transform.position; // Mueve el tornillo a la posición final
+            objectToMove.transform.position = targetPositionObject.transform.position; // Mueve el objeto a la posición final
             if (physicsObject != null)
             {
                 Rigidbody objRigidbody = physicsObject.GetComponent<Rigidbody>();
@@ -72,6 +79,11 @@ public class ScrewTrigger : MonoBehaviour
                 {
                     objRigidbody.isKinematic = false; // Reactiva las físicas en el objeto especificado
                 }
+            }
+            
+            if (kinematicTarget != null)
+            {
+                kinematicTarget.isKinematic = false; // Desactiva isKinematic en el objeto especificado
             }
         }
     }

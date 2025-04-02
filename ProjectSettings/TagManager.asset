@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Anchor
   - Punta
+  - ZonaExtincion
   layers:
   - Default
   - TransparentFX
