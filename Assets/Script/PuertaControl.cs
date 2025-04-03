@@ -3,12 +3,10 @@ using System.Collections;
 
 public class PuertaControl : MonoBehaviour
 {
-    [SerializeField] private Transform puerta; // Objeto que actuará como bisagra
-    [SerializeField] private GameObject[] tornillos = new GameObject[4]; // Array con los tornillos
-
-    private int tornillosFuera = 0; // Contador de tornillos que han salido
-    private bool yaGirado = false; // Evita múltiples rotaciones
+    [SerializeField] private Transform puerta; // Objeto de la puerta
     private Quaternion rotacionInicial;
+    private Quaternion rotacionFinal;
+    private float duracion = 1f; // Duración de la animación
 
     void Start()
     {
@@ -18,32 +16,18 @@ public class PuertaControl : MonoBehaviour
             return;
         }
         rotacionInicial = puerta.localRotation;
+        rotacionFinal = Quaternion.Euler(0, 0, -90f) * rotacionInicial; // Ajusta según sea necesario
     }
 
-    private void OnTriggerExit(Collider other)
+    public void AbrirPuerta()
     {
-        // Verificar si el objeto que salió de contacto es uno de los tornillos asignados
-        for (int i = 0; i < tornillos.Length; i++)
-        {
-            if (other.gameObject == tornillos[i])
-            {
-                tornillosFuera++;
-
-                if (tornillosFuera >= tornillos.Length && !yaGirado)
-                {
-                    yaGirado = true;
-                    StartCoroutine(RotarPuerta());
-                }
-                break; // Salir del bucle para evitar contar múltiples veces
-            }
-        }
+        Debug.Log("¡Todos los tornillos han salido! Abriendo la puerta...");
+        StartCoroutine(RotarPuerta());
     }
 
-    IEnumerator RotarPuerta()
+    private IEnumerator RotarPuerta()
     {
         float tiempo = 0f;
-        float duracion = 1f; // Duración de la animación en segundos
-        Quaternion rotacionFinal = Quaternion.Euler(0, 0, -17.7f) * rotacionInicial; // Rotar en Z
 
         while (tiempo < duracion)
         {
@@ -52,6 +36,6 @@ public class PuertaControl : MonoBehaviour
             yield return null;
         }
 
-        puerta.localRotation = rotacionFinal; // Asegurar la rotación final exacta
+        puerta.localRotation = rotacionFinal;
     }
 }

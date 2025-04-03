@@ -15,7 +15,7 @@ public class AlarmaManager : MonoBehaviour
 
     IEnumerator IniciarAlarma()
     {
-        yield return new WaitForSeconds(180); // Espera 3 minutos
+        yield return new WaitForSeconds(120); // Espera 3 minutos
 
         gO_Particulas.SetActive(true);
         if (alarmaSonido != null) alarmaSonido.Play();

@@ -102,10 +102,10 @@ PrefabInstance:
       addedObject: {fileID: 3034183182524249731}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7bf4f6fca103cbd45ab3be4b49074b40, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3771567472013313260}
+      addedObject: {fileID: 7164020819569156802}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7bf4f6fca103cbd45ab3be4b49074b40, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7164020819569156802}
+      addedObject: {fileID: 6549373878174430542}
   m_SourcePrefab: {fileID: 100100000, guid: 7bf4f6fca103cbd45ab3be4b49074b40, type: 3}
 --- !u!4 &4759476346380621654 stripped
 Transform:
@@ -140,7 +140,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -285,8 +285,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0011270348, y: 0.0012133586, z: 0.0017594979}
-  m_Center: {x: -0.000017444772, y: 0.000007053678, z: 0.00049472693}
+  m_Size: {x: 0.0011270348, y: 0.0012133586, z: 0.0018182349}
+  m_Center: {x: -0.000017444774, y: 0.0000070536785, z: 0.00046535852}
 --- !u!65 &3034183182524249731
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -308,35 +308,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.00062183733, y: 0.00065324694, z: 0.0014564536}
   m_Center: {x: -0.000006463464, y: 0.000012544801, z: 0.0006507212}
---- !u!114 &3771567472013313260
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5280151883838934508}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f4467effc11c7c448970bc73b091e04, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  screwAnimator: {fileID: 7164020819569156802}
-  requiredObject: {fileID: 0}
-  triggerInput:
-    m_UseReference: 1
-    m_Action:
-      m_Name: Trigger Input
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: 0da9b215-ab4f-4bc4-a963-ea747ffccdf9
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: -2439264783773714294, guid: 0be0028c24f2a4c14a96b6aa39055933, type: 3}
-  targetPositionObject: {fileID: 0}
-  animationDuration: 1
-  physicsObject: {fileID: 5280151883838934508}
 --- !u!95 &7164020819569156802
 Animator:
   serializedVersion: 5
@@ -358,3 +329,34 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6549373878174430542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5280151883838934508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f4467effc11c7c448970bc73b091e04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  screwAnimator: {fileID: 0}
+  requiredObject: {fileID: 0}
+  triggerInput:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Trigger Input
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: dfeae1b6-ca89-4856-89ae-5d83e9094d84
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  targetPositionObject: {fileID: 0}
+  animationDuration: 1
+  physicsObject: {fileID: 0}
+  kinematicTarget: {fileID: 0}
+  objectToMove: {fileID: 0}

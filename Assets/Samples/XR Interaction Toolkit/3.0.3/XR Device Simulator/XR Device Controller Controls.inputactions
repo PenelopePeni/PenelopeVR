@@ -324,6 +324,17 @@
                 },
                 {
                     "name": "",
+                    "id": "4a6e3384-dfef-4601-a909-b064825622e7",
+                    "path": "<Mouse>/middleButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Trigger",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "c17eb846-7a66-4006-9d57-6b91831868d0",
                     "path": "<Keyboard>/b",
                     "interactions": "",
